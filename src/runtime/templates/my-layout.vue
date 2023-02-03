@@ -1,7 +1,8 @@
 <template>
   <div class="my-layout">
     <div class="header">
-      My Layout Header
+      <NuxtLink to="/">Home</NuxtLink> |
+      <NuxtLink to="/page2">Page 2</NuxtLink>
     </div>
     <div>
       <slot />
@@ -9,8 +10,8 @@
   </div>
 </template>
 
-<style lang="sass">
-$blue: blue
-.my-layout
-  background: $blue
+<style>
+.my-layout {
+  background: gray;
+}
 </style>
